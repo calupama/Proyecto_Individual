@@ -1,16 +1,19 @@
 * {
   margin: 0px;
 }
+
 header {
   background-color: #eac926;
 }
+
 body {
-    background-color: #ebebeb;
-    font-family: "Roboto", sans-serif;
-    font-family: "Roboto Condensed", sans-serif;
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
+
 img {
-    width: 100%;
+  width: 100%;
 }
 
 h3 {
@@ -45,12 +48,14 @@ header .form {
 header div.logo {
   padding: 10px;
 }
+
 header .form {
   display: flex;
   align-items: center;
   padding: 2px;
   font-size: 11px;
 }
+
 header nav {
   font-size: 12px;
   margin-left: 20px;
