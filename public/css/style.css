@@ -54,6 +54,7 @@ border-bottom-left-radius: 0;
 
 h3 {
   font-size: 24px;
+  font-style:normal;
 }
 
 p {
@@ -126,12 +127,12 @@ header .form .submit {
   width: 10%;
 }
 
-div.burger-menu {
+.burger-menu {
   text-align: center;
   border-bottom: solid #eac926 2vh;
 }
 
-div.burger-menu i {
+.burger-menu i {
   background-color: #1259c3;
   border-radius: 15%;
   color: #fff;
