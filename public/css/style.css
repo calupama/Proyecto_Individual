@@ -41,10 +41,6 @@ border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 
 }
-#padding {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
 
 .nav-header {
   display: flex;
@@ -70,11 +66,11 @@ p {
   flex-grow: 5;
   width: 40%;
   padding-top: 5vh;
-  padding-left: 5vh;
+  padding-left: 1vh;
 }
 
 .header-item{
-  padding: 5vh;
+  padding: 1vh;
   width: 100%;
   text-align: center;
 }
@@ -156,20 +152,27 @@ a {
 
 .discount {
   width: 70%;
+  
 }
 
 .discount,
 .description {
-  font-size: 16px;
+  color: green;
+  margin: 0;
+  flex-grow: 7;
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-size: 20px;
   font-weight: normal;
+
 }
 
-h3,
-.description {
+h3.description {
   color: #666;
 }
 
 .description {
+  text-align: left;
   display: none;
   margin-top: 20px;
 }
@@ -206,14 +209,14 @@ main section article i {
   display: block;
   font-size: 16px;
   padding: 5px;
-  width: 20px;
-  height: 30px;
+  width: 25px;
+  height: 20px;
   border: 1px solid #39b54a;
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  right: 20px;
-  top: -15px;
+  right: 50px;
+  top: -20px;
   box-sizing: border-box;
 }
 .truck{
@@ -277,8 +280,36 @@ padding: 2vh;
   transition-duration: 0,6s;
 }
 
-@media (min-width: 361px) {
-  main section article .description {
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin:1vh;
+}
+
+.boton{
+  border: #1259c3 solid 2vh;
+  border-radius: 1.5vh;
+  background-color: #1259c3;
+  color: white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.boton:hover{
+  background-color: blue;
+  border: blue solid 1vh;
+}
+.barrainfo {
+  margin: 1vh;
+  padding: 2vh;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
+  border-radius: 2vh;
+  border: white solid;
+}
+
+@media (min-width: 319px)
+ {  main section article .description {
     display: block;
   }
 
@@ -304,8 +335,38 @@ padding: 2vh;
   }
 }
 
+@media (min-width: 426px) {
+  
+}
+
 @media (min-width: 769px) {
+
+  .img-header{
+    width: 2%;
+    margin-right: 2vh;
+  }
   main section div.products article {
     width: 22%;
+  }
+  .busqueda {
+    padding-bottom: 5vh;
+    width: 110%;
+  }
+  .header-item {
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    width: 30%;
+    padding: 2vh;
+  }
+  .derechos {
+    width: 100%;
+    text-align: center;
+    padding-left: 5vh;
   }
 }
