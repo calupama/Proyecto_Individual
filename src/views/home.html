@@ -5,25 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bienvenidos a MercadoLiebre</title>
+  <title>MercadoLiebre</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/register.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="/css/register.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap"rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
 
+ 
 
 </head>
 <body>
   <header>
     <div class="top-header">
-      <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+      <img class= "img-header" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
       <form action="/register" method="POST">
         <p class="busqueda"><input class="barrabusqueda" type="text" placeholder=" Buscar productos, marcas"name="search">
         <button class="botonbusqueda">
           <i class="fa fa-search" style="font-size: 18px;"></i>
         </button>
         </p></form>
-        <p class=""><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjet de crédito</p>
+        <p class="header-item"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjet de crédito</p>
       </div>
       <nav class="nav-header">
         <ul class="nav-header">
@@ -34,26 +39,27 @@
         </ul>
         <ul class="nav-header">
           <li class="ul-item"><a href="/register">Creá tu cuenta</a> <i class="far fa-id-card"></i></li>
-          <li class="ul-item"><a href="/register">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
-          <li class="ul-item"><a href="/register">Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+          <li class="ul-item"><a href="/login">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+          <li class="ul-item"><a href="#">Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
         </ul>
       </nav>
-      <section class="burger-menu">
+      <div class="burger-menu">
         <i class="fa fa-bars burger"></i>
-      </section>
+    </div>
     </header>
       <section class="banner">
       <img src="images/img-home-banner.jpg" alt="Banner de ofertas" />
    </section>
 
   <main>
+    <h3 style = "text-align: left;">Basado en tu última visita</h3>
     <section class="last-visit">
-      <h3>Basado en tu última visita</h3>
+      
       <div class="products">
         <article>
           <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$6.770</p>
             <p class="discount">40% off</p>
             <h4 class="description">Cafetera Moulinex</h4>
@@ -62,7 +68,7 @@
         <article>
           <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$230.000</p>
             <p class="discount">20% off</p>
             <h4 class="description">MacBook Pro 2019</h4>
@@ -71,7 +77,7 @@
         <article>
           <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$70.500</p>
             <p class="discount">10% off</p>
             <h4 class="description">Samsung Galaxy S10</h4>
@@ -80,7 +86,7 @@
         <article>
           <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$23.200</p>
             <p class="discount">5% off</p>
             <h4 class="description">SmartTv Samsung 43"</h4>
@@ -94,7 +100,7 @@
         <article>
           <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$6.770</p>
             <p class="discount">40% off</p>
             <h4 class="description">Cafetera Moulinex</h4>
@@ -103,7 +109,7 @@
         <article>
           <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$230.000</p>
             <p class="discount">20% off</p>
             <h4 class="description">MacBook Pro 2019</h4>
@@ -112,7 +118,7 @@
         <article>
           <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$70.500</p>
             <p class="discount">10% off</p>
             <h4 class="description">Samsung Galaxy S10</h4>
@@ -121,7 +127,7 @@
         <article>
           <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img" />
           <div class="main-article">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck truck" id="camion"></i>
             <p class="price">$23.200</p>
             <p class="discount">5% off</p>
             <h4 class="description">SmartTv Samsung 43"</h4>
@@ -129,7 +135,7 @@
         </article>
         </div>
       </section>
-      </main>
+  </main>
       <footer class="footer">
         <section class="footer-section">
             <p><i class="fa-solid fa-credit-card icons-blue"></i></p>
@@ -152,5 +158,5 @@
         <br>
         <p class="derechos"><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p>
         <br>
-        </body>
+  </body>
 </html>

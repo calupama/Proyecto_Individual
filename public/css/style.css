@@ -19,11 +19,39 @@ img {
 .busqueda {
   text-align: center;
   flex-grow: 5;
-  padding: top 5v;
-  padding-left:  1vh;
+  padding-top: 5vh;
+  padding-left: 1vh;
   border-right: 1vh;
   display: flex;
 }
+
+.barrabusqueda{
+border:white solid 1vh;
+border-radius: 1vh;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+width: 100%;
+}
+
+.botonbusqueda {
+background-color: white;
+border: white solid 1vh;
+border-radius: 1vh;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+
+}
+#padding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -32,10 +60,22 @@ p {
   font-size: 12px;
 }
 
-div.top-header {
+.top-header {
   display: flex;
   flex-wrap: wrap;
-  padding: 5%;
+}
+
+.img-header{
+  flex-grow: 5;
+  width: 40%;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+
+.header-item{
+  padding: 5vh;
+  width: 100%;
+  text-align: center;
 }
 
 header div.top-header p {
@@ -44,18 +84,11 @@ header div.top-header p {
   margin-top: 10px;
 }
 
-header {
-  background-color: #eac926;
-}
-
 header div.logo,
 header .form {
   width: 50%;
 }
 
-header div.logo {
-  padding: 10px;
-}
 
 header .form {
   display: flex;
@@ -95,17 +128,14 @@ header .form .submit {
 
 div.burger-menu {
   text-align: center;
+  border-bottom: solid #eac926 2vh;
 }
 
 div.burger-menu i {
-  background-color: #0044aa;
-  border-radius: 5px;
+  background-color: #1259c3;
+  border-radius: 15%;
   color: #fff;
-  font-size: 20px;
-  height: 40px;
-  margin: 10px 0px 20px 0px;
-  padding: 10px;
-  width: 40px;
+  padding: 10px;;
 }
 
 div.last-visit,
@@ -115,8 +145,12 @@ div.offers {
 }
 
 .price {
-  font-size: 18px;
-  width: 30%;
+  font-size: 22px;
+  flex-grow: 3;
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .discount {
@@ -144,8 +178,9 @@ section.banner img {
 }
 
 main {
+  text-align: left;
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 main section article {
@@ -160,13 +195,17 @@ main section article img {
 main section article i,
 .discount {
   color: #39b54a;
+  margin: 0;
+  flex-grow: 7;
+  box-sizing: border-box;
+  padding-top: 5px;
 }
 
 main section article i {
   display: block;
   font-size: 16px;
   padding: 5px;
-  width: 30px;
+  width: 20px;
   height: 30px;
   border: 1px solid #39b54a;
   background-color: #fff;
@@ -174,11 +213,30 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  box-sizing: border-box;
 }
+.truck{
+  color: #39b54a;
+  width: 20px;
+  padding: 1vw;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+
+}
+  
+
 
 main section h3 {
   margin: 20px 0px;
 }
+
+.description{
+  color: #808080;
+  text-align: left;
+  margin: 2vw;
+  font-size: 16px;
+}
+
 
 article div.main-article {
   width: 100%;
@@ -188,6 +246,34 @@ article div.main-article {
   border-top: 1px solid #ebebeb;
   position: relative;
   padding: 15px;
+}
+
+
+footer {
+  text-align: center;
+  background-color: white;
+}
+footer section p i{
+  font-size: 8vh;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+.ul-item {
+padding: 2vh;
+}
+
+.icons-blue{
+  color: #1259c3;
+  width: 2em;
+  margin-top: 5vw;
+}
+
+.icons-blue:hover{
+  color: #808080;
+  transition-duration: 0,6s;
 }
 
 @media (min-width: 361px) {
